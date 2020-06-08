@@ -6,10 +6,9 @@ def find_even_values(src)
   while index < src.count do 
     inner_index = 0
     while inner_index < src[index].count do 
-      src[index][inner_index] % 2 !== 0 ? src[index][inner_index].pop() 
+      src[index][inner_index].even? ? p src[index][inner_index] 
       inner_index += 1
     end
   index += 1
   end
-  src 
 end
